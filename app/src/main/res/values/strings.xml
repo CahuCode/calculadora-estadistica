@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Estadística</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_click">Title click</string>
+    <string name="menu_creditos">Créditos</string>
+    <string name="menu_close">Cerrar</string>
+    <string name="menu_group">Group</string>
+</resources>

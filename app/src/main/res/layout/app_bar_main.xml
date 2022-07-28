@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:background="@color/teal_700"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            android:id="@+id/btnreset"
+            android:enabled="true"
+            android:src="@drawable/ic_resetbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:textAlignment="center"
+            android:imeOptions="actionDone"
+            android:id="@+id/txtmuestra"
+            android:enabled="true"
+            android:padding="8dp"
+            android:text=""
+            android:inputType="number"
+            android:background="@drawable/shape_edittext"
+            android:hint="Muestra"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_marginLeft="10dp"
+            android:id="@+id/btnmuestra"
+            android:enabled="true"
+            android:text="Muestra"
+            android:background="@drawable/shape_btn"
+            android:shadowColor="@color/teal_700"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/txtdato"
+            android:imeOptions="actionDone"
+            android:textAlignment="center"
+            android:enabled="false"
+            android:padding="8dp"
+            android:text=""
+            android:inputType="numberDecimal"
+            android:background="@drawable/shape_edittext"
+            android:hint="Ingrese un dato"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_marginLeft="10dp"
+            android:enabled="false"
+            android:id="@+id/btndato"
+            android:text="AGREGAR"
+            android:background="@drawable/shape_btn"
+            android:shadowColor="@color/teal_700"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrolldatos"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:padding="15dp"
+            android:id="@+id/txtdatos"
+            android:background="@color/bacgroundwhite"
+            android:inputType="textMultiLine"
+            android:minLines="5"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </ScrollView>
+
+
+</LinearLayout>
